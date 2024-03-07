@@ -1,0 +1,150 @@
+@import 'guide.scss';
+body {
+	position: relative;
+	height: auto;
+	padding: 5vh 10px;
+}
+
+// Header
+.logo {
+	width: 35px;
+	height: 30px;
+}
+.navbar {
+	display: none;
+}
+.mobile__menu-icon {
+	display: block;
+}
+.open-menu-btn {
+	width: 40px;
+	height: 25px;
+	background-color: $off-white;
+	border: none;
+	img {
+		width: 100%;
+		height: 100%;
+	}
+}
+
+// Mobile Menu
+.mobile__menu {
+	@include flexbox(column, start, start, 50px);
+	display: none;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 75%;
+	height: 100vh;
+	padding: 5vh 10px;
+	background-color: $off-white;
+	box-shadow: -6px 0 8px rgba(0, 0, 0, 0.3);
+}
+.close-menu-btn {
+	align-self: flex-end;
+	width: 40px;
+	height: 30px;
+	background-color: $off-white;
+	border: none;
+	img {
+		width: 100%;
+		height: 100%;
+	}
+}
+.navbar__list {
+	@include flexbox(column);
+	height: 60%;
+}
+.list__item {
+	font-size: 2rem;
+	a {
+		color: $very-dark-blue;
+	}
+}
+
+// Main Container
+.main-wrapper {
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(3, auto);
+	height: auto;
+	margin-top: 30px;
+}
+
+// Principal Section
+.principal {
+	@include flexbox(column, space-between, null, 20px);
+	width: 100%;
+	height: 500px;
+	margin-bottom: 50px;
+}
+.principal__hero {
+	width: 100%;
+	background-image: url(../assets/imgs/image-web-3-mobile.jpg);
+	background-size: cover;
+}
+.description-container {
+	@include flexbox(column, center, start, 10px);
+}
+.principal__title {
+	width: 100%;
+	font-size: 3.2rem;
+}
+.principal__description-container {
+	width: 100%;
+}
+.principal__description-text {
+	line-height: 1.6;
+}
+
+// Secondary Section
+.secondary {
+	margin: 0 0 50px;
+	height: 500px;
+}
+.news-container {
+	height: 100%;
+}
+.news__info {
+	margin-bottom: 30px;
+	padding-bottom: 20px;
+}
+.news__info-link {
+	font-size: 1.8rem;
+}
+.news__info-description {
+	font-size: $sm-size;
+}
+
+// Tertiary Section
+.tertiary {
+	grid-area: 3 / 1 / 4 / 2;
+	@include flexbox(column, null, start, 20px);
+}
+.article {
+	width: 100%;
+	height: auto;
+}
+.article__description {
+	font-size: $sm-size;
+}
+
+// Breakpoints
+@media screen and (width: 540px) {
+	body {
+		padding: 8vh 10vw;
+	}
+	.mobile__menu {
+		padding: 8vh 10vw;
+	}
+}
+@media screen and (width: 280px) {
+	.principal {
+		height: 600px;
+	}
+	.principal__hero {
+		height: 300px;
+	}
+	.secondary {
+		height: 600px;
+	}
+}
