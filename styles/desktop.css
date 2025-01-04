@@ -10,7 +10,7 @@ body {
   margin: 0;
   padding: 5vh 14vw 10vh;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   font-family: "Inter", sans-serif;
 }
 
@@ -24,7 +24,6 @@ body {
 .navbar {
   width: 40%;
 }
-
 .navbar__list {
   display: flex;
   flex-direction: row;
@@ -137,17 +136,15 @@ body {
 .news__info:last-child {
   border: none;
 }
-
 .news__info-link {
   font-size: 1.6rem;
   font-weight: 700;
   text-decoration: none;
 }
-.news__info-link:hover {
+.news__info:hover {
   color: hsl(35, 77%, 62%);
   cursor: pointer;
 }
-
 .news__info-description {
   font-size: 1.2rem;
   color: hsl(233, 8%, 79%);

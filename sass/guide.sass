@@ -1,0 +1,42 @@
+// primary colors
+$soft-orange: hsl(35, 77%, 62%)
+$soft-red: hsl(5, 85%, 63%)
+
+// neutral colors
+$off-white: hsl(36, 100%, 99%)
+$grayish-blue: hsl(233, 8%, 79%)
+$dark-grayish-blue: hsl(236, 13%, 42%)
+$very-dark-blue: hsl(240, 100%, 5%)
+
+// typography
+$primary-font: "Inter", sans-serif
+
+// font-size
+$sm-size: 1.5rem
+
+// font-weight
+$regular: 400
+$bold: 700
+$x-bold: 800
+
+// general resets
+*
+	box-sizing: border-box
+
+html
+	font-size: 62.5%
+
+body
+	margin: 0
+	padding: 5vh 14vw 10vh
+	width: 100%
+	min-height: 100vh
+	font-family: $primary-font
+
+// mixins
+@mixin flexbox($direction:null, $justify:null, $align:null, $gap:null)
+	display: flex
+	flex-direction: $direction
+	justify-content: $justify
+	align-items: $align
+	gap: $gap

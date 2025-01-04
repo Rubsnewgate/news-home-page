@@ -1,0 +1,44 @@
+@use 'guide.sass'
+body
+	padding: 5vh 8vw 10vh
+
+// header
+.navbar
+	width: 60%
+
+// principal section
+.principal__title
+	font-size: 3.4rem
+
+// tertiary section
+.article
+	height: 70%
+	width: 32%
+
+	&__number
+		margin-bottom: 5px
+		font-size: 2rem
+
+	&__description
+		margin-top: 5px
+
+// breakpoints
+@media screen and (min-width: 1024px)
+	.principal__hero
+		height: 60%
+
+	.description-container
+		height: 40%
+
+	.principal__title
+		font-size: 4rem
+
+	.article
+		height: 85%
+
+@media screen and (height: 600px)
+	body
+		height: auto
+
+	.tertiary
+		margin-top: 20px

@@ -4,12 +4,12 @@
 	<meta charset="UTF-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<meta name="description" content="Frontend Mentor challenge"/>
-	<title>News Homepage</title>
-	<!-- Font -->
+	<title> News Homepage </title>
+	<!-- font -->
 	<link rel="preconnect" href="https://fonts.googleapis.com"/>
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"/>
-	<!-- Style -->
+	<!-- styles -->
 	<link rel="stylesheet" href="../styles/desktop.css"/>
 	<link rel="stylesheet" href="../styles/tablet.css" media="(min-width: 768px) and (max-width: 1024px)"/>
 	<link rel="stylesheet" href="../styles/mobile.css" media="(max-width: 540px)"/>
@@ -19,15 +19,18 @@
 		<div class="logo-container">
 			<img class="logo" src="../assets/icons/logo.svg" alt="Company logo"/>
 		</div>
+
 		<div class="mobile__menu-icon">
 			<button class="open-menu-btn">
 				<img src="../assets/icons/icon-menu.svg" alt="Menu icon"/>
 			</button>
 		</div>
+
 		<div class="mobile__menu">
 			<button class="close-menu-btn">
 				<img src="../assets/icons/icon-menu-close.svg" alt="Close menu icon"/>
 			</button>
+
 			<ul class="navbar__list">
 				<li class="list__item"> <a href="#"> Home </a> </li>
 				<li class="list__item"> <a href="#"> New </a> </li>
@@ -36,6 +39,7 @@
 				<li class="list__item"> <a href="#"> Categories </a> </li>
 			</ul>
 		</div>
+
 		<nav class="navbar">
 			<ul class="navbar__list">
 				<li class="list__item"> <a href="#"> Home </a> </li>
@@ -46,6 +50,7 @@
 			</ul>
 		</nav>
 	</header>
+
 	<main class="main-wrapper">
 		<section class="principal">
 			<div class="principal__hero"></div>
@@ -53,44 +58,56 @@
 				<h1 class="principal__title">
 					The Bright Future of Web 3.0?
 				</h1>
+
 				<div class="principal__description-container">
-				<p class="principal__description-text">
-					We dive into the next evolution of the web that claims to put the power of
-					the platforms back into the hands of the people. But is it really fulfilling
-					its promise?
-				</p>
-				<button class="link-btn"> read more </button>
+					<p class="principal__description-text">
+						We dive into the next evolution of the web that claims to
+						put the power of the platforms back into the hands of the
+						people. But is it really fulfilling it's promise?
+					</p>
+
+					<button class="link-btn"> read more </button>
 				</div>
 			</div>
 		</section>
+
 		<section class="secondary">
 			<div class="news-container">
 				<h2 class="news__subtitle"> New </h2>
 				<div class="news__info">
-					<a class="news__info-link" href="#"> Hydrogen VS Electric Cars </a>
+					<a class="news__info-link" href="#">
+						Hydrogen VS Electric Cars
+					</a>
 					<p class="news__info-description">
 						Will hydrogen-fueled cars ever catch up to EVs?
 					</p>
 				</div>
+
 				<div class="news__info">
-					<a class="news__info-link" href="#"> The Downsides of AI Artistry </a>
+					<a class="news__info-link" href="#">
+						The Downsides of AI Artistry
+					</a>
 					<p class="news__info-description">
-						What are the possible adverse effects of on-demand AI image generation?
+						What are the possible adverse effects of on-demand AI
+						image generation?
 					</p>
 				</div>
+
 				<div class="news__info">
-					<a class="news__info-link" href="#"> Is VC Funding Drying Up? </a>
+					<a class="news__info-link" href="#">
+						Is VC Funding Drying Up?
+					</a>
 					<p class="news__info-description">
-						Private funding by VC firms is down 50% YOY. We take a look at what
-						that means.
+						Private funding by VC firms is down 50% YOY. We take a
+						look at what that means.
 					</p>
 				</div>
 			</div>
 		</section>
+
 		<section class="tertiary">
 			<article class="article">
-				<img class="article__img"
-					src="../assets/imgs/image-retro-pcs.jpg"
+				<img class="article__img" src="../assets/imgs/image-retro-pcs.jpg"
 					alt="Computer image"
 				/>
 				<div class="article__info-container">
@@ -101,9 +118,9 @@
 					</p>
 				</div>
 			</article>
+
 			<article class="article">
-				<img class="article__img"
-					src="../assets/imgs/image-top-laptops.jpg"
+				<img class="article__img" src="../assets/imgs/image-top-laptops.jpg"
 					alt="Keyboard image"
 				/>
 				<div class="article__info-container">
@@ -114,9 +131,9 @@
 					</p>
 				</div>
 			</article>
+
 			<article class="article">
-				<img class="article__img"
-					src="../assets/imgs/image-gaming-growth.jpg"
+				<img class="article__img" src="../assets/imgs/image-gaming-growth.jpg"
 					alt="Gaming image"
 				/>
 				<div class="article__info-container">
@@ -129,6 +146,7 @@
 			</article>
 		</section>
 	</main>
+
 	<script src="../js/main.js"></script>
 </body>
 </html>
